@@ -6,7 +6,9 @@
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .eslintrc.json ."
   },
   "dependencies": {
     "eslint-plugin-testing-library": "^5.10.1",
@@ -26,6 +28,7 @@
     "eslint-config-prettier": "^8.6.0",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "prettier": "^2.8.4",
     "typescript": "4.6.4"
   }
 }
