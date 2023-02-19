@@ -47,7 +47,7 @@ export function InputField({
   inputError,
 }: InputFieldProps) {
   const [error, setError] = useState<boolean | null>(null)
-  const [contentInForm, setContentInForm] = useState(false)
+  const [contentInForm, setContentInForm] = useState(inputValue?.length > 0)
 
   function changeHandler(e: React.ChangeEvent<HTMLInputElement>) {
     setError(null)
