@@ -5,7 +5,7 @@ type StepNumberProviderProps = {
 }
 
 export type NumberContextType = 1 | 2 | 3 | 4 | 5
-type SetStepNumberFunctionType = React.Dispatch<
+export type SetStepNumberFunctionType = React.Dispatch<
   React.SetStateAction<NumberContextType>
 >
 

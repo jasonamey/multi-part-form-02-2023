@@ -19,7 +19,7 @@ export function StepTwo() {
   return (
     <Container>
       <Header
-        titleText="Select you plan"
+        titleText="Select your plan"
         subtitleText="You have the option of monthly or yearly billing"
       />
       <PlanChoices />

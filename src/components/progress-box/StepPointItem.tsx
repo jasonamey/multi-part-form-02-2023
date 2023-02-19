@@ -52,7 +52,7 @@ const PointTextContainer = styled.div`
     display: block;
   }
 `
-const PointTextHeadline = styled.h2`
+const PointTextHeadline = styled.h3`
   color: var(--pastel-blue);
   font-size: 0.6rem;
   font-weight: 100;

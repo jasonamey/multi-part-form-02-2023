@@ -34,6 +34,8 @@ const Error = styled.span<{ error: boolean }>`
   color: red;
   position: absolute;
   right: 0;
+  opacity: ${(props) => (props.error ? '1' : '0')};
+  transition: 2s;
 `
 
 export function InputField({
@@ -65,9 +67,7 @@ export function InputField({
     <>
       <Label htmlFor={inputName}>
         {labelText}
-        {error && !contentInForm && (
-          <Error error={error as boolean}>{inputError}</Error>
-        )}
+        {!contentInForm && <Error error={error as boolean}>{inputError}</Error>}
       </Label>
       <Input
         onChange={changeHandler}

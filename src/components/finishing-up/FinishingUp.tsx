@@ -101,6 +101,7 @@ export function FinishingUp() {
       <TotalItemContainer>
         <TotalText>Total{` (per ${removeAdverb(duration)})`}</TotalText>
         <Price
+          data-testid="total-price"
           listedPrice={totalPrice}
           itemPriceType="total"
           duration={duration}

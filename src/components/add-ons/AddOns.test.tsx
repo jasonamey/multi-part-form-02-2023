@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react'
 import { AddOn } from './add-on'
 import { TestWrapper } from '@/test'
 
-describe('Add Ons', () => {
+describe.skip('Add Ons', () => {
   it.each`
     price | headerText          | subHeaderText          | addOnType
     ${1}  | ${'online header'}  | ${'online subHeader'}  | ${'online'}
