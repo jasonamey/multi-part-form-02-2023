@@ -1,4 +1,4 @@
-import Home from './index'
+import Home from '../pages/index'
 import { screen, cleanup, render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { TestWrapper } from '@/test'
