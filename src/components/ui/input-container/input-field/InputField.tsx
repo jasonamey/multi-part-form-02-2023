@@ -30,11 +30,10 @@ const Label = styled.label`
   font-size: 0.9rem;
 `
 
-const Error = styled.span<{ error: boolean }>`
+const Error = styled.span`
   color: red;
   position: absolute;
   right: 0;
-  opacity: ${(props) => (props.error ? '1' : '0')};
   transition: 2s;
 `
 
@@ -67,7 +66,7 @@ export function InputField({
     <>
       <Label htmlFor={inputName}>
         {labelText}
-        {!contentInForm && <Error error={error as boolean}>{inputError}</Error>}
+        {error && !contentInForm && <Error>{inputError}</Error>}
       </Label>
       <Input
         onChange={changeHandler}
