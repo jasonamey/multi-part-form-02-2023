@@ -1,4 +1,6 @@
 import React from 'react'
+import { screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import FormDataProvider from '@/context/FormDataProvider'
 import StepNumberProvider from '@/context/StepNumberProvider'
 
@@ -13,9 +15,6 @@ export const TestWrapper = ({ children }: TestWrapperProps) => {
     </FormDataProvider>
   )
 }
-
-import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 
 export async function clickForwardBtn() {
   const fwdButton = screen.getByRole('button', { name: 'Forward' })
