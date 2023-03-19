@@ -1,29 +1,28 @@
-# Next.js + Jest
+# Multi Step Form
 
-This example shows how to configure Jest to work with Next.js.
+A multi step form that collects user input and summarizes the user's choices
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+## Features
 
-## How to Use
+- Maintains form input state throughout app
+- Totals users selections
+- Responsive
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+![Screenshot](screenshot.png)
 
-In your terminal, run the following command:
+## Built With
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
+- NextJs
+- Styled Components
+- Typescript
+- React Testing Library
+- React Context for global state
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
+## Tests
 
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
+There are integration tests for all steps of the form.
 
-## Run Jest Tests
+## Future Improvements
 
-```bash
-npm test
-```
+- Form validation for email and phone number
+- Additional tests
